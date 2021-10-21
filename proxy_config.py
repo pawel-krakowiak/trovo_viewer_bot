@@ -3,6 +3,13 @@ from pathlib import Path
 import os.path
 
 
+class GettingProxyException(Exception):
+    def __str__(self):
+        return f"{super().__str__()}: Error while getting proxy!\n"
+
+class ListEmptyException(Exception):
+    def __str__(self):
+        return f"{super().__str__()}: Your proxy list is empty, check path file or validate your proxy shema <ip>:<port>!\n"
 
 
 def checker(proxy):
