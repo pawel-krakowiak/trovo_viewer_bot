@@ -48,5 +48,3 @@ def get_proxy(proxies_file, is_check=False):
             raise ListEmptyException
         else:
             raise Exception
-
-# print(get_proxy(proxies_file, is_check=False))
